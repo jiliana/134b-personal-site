@@ -27,7 +27,7 @@
     <hr>
 
     <section>
-        <h1>Form</h1>
+        <h2>Form</h2>
         <form action="mailto:jatiu@ucsd.edu" method="POST">
             <fieldset>
                 <legend>Choose the sender:</legend>
@@ -44,7 +44,7 @@
             <label for="urgency">Choose your message's urgency:</label>
             <input list="urgency-opts" id="urgency" name="urgency">
 
-            <datalist id="urgency-opts" name="urgency-opts">
+            <datalist id="urgency-opts">
                 <option value="High"></option>
                 <option value="Medium"></option>
                 <option value="Low"></option>
@@ -62,7 +62,7 @@
             </label>
             <br>
             <label for="mailBody">Type your email body in this box:
-                <textarea name="mailBody" if="mailBody">Here!</textarea>
+                <textarea name="mailBody" id="mailBody">Here!</textarea>
             </label>
             <br>
             <button type="submit">Send Email</button>
@@ -72,13 +72,14 @@
     <hr>
 
     <section>
-        <h1>Table</h1>
+        <h2>Table</h2>
         <table>
+            <caption>Pet Names</caption>
             <colgroup>
                 <col style="width:100px;">
                 <col style="width:200px;">
             </colgroup>
-            <caption>Pet Names</caption>
+            
             <tr>
                 <th>Animal</th>
                 <th>Name</th>
@@ -97,7 +98,7 @@
     <hr>
 
     <section>
-        <h1>Template</h1>
+        <h2>Template</h2>
         <template>
             <p>This is hidden!</p>
         </template>
@@ -107,14 +108,14 @@
     <hr>
 
     <section>
-        <h1>Canvas</h1>
+        <h2>Canvas</h2>
         <canvas id="canvas" width="500" height="500" style="border:1px solid black"></canvas>
     </section>
 
     <hr>
 
     <section>
-        <h1>Media</h1>
+        <h2>Media</h2>
         <h2>Iframe</h2>
         <p>UCSD website</p>
         <iframe src="https://ucsd.edu/" width="500" height="500"></iframe>
@@ -132,15 +133,17 @@
     <hr>
 
     <footer>
-        <a href="#">&#8593 Scroll to Top</a>
+        <a href="#">&#8593; Scroll to Top</a>
         <p>Created by Jiliana Tiu.</p>
     </footer>
+
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "20px Arial";
+        ctx.fillText("Hello World", 10, 50);
+    </script>
+
 </body>
 </html>
 
-<script>
-    var c = document.getElementById("canvas");
-    var ctx = c.getContext("2d");
-    ctx.font = "20px Arial";
-    ctx.fillText("Hello World", 10, 50);
-</script>
