@@ -1,152 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo 1</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <a href="../demos.html">&lt; Demos</a>
+      <a href="../demos.html">&lt; Demos</a>
     </nav>
-    
+
     <main>
-        <h1>Demo 1</h1>
-        <details>
-            <summary>Table of Contents</summary>
-            <ol>
-                <li>Form</li>
-                <li>Table</li>
-                <li>Template</li>
-                <li>Canvas</li>
-                <li>Media</li>
-            </ol>
-        </details>
-        
-        
+      <h1>Demo 1</h1>
+      <details>
+        <summary>Table of Contents</summary>
+        <ol>
+          <li>Form</li>
+          <li>Table</li>
+          <li>Template</li>
+          <li>Canvas</li>
+          <li>Media</li>
+        </ol>
+      </details>
     </main>
 
-    <hr>
+    <hr />
 
     <section>
-        <h2>Form</h2>
-        <form action="mailto:jatiu@ucsd.edu" method="POST">
-            <fieldset>
-                <legend>Choose the sender:</legend>
-                <input type="radio" id="anonymous" name="sender" value="anonymous">
-                <label for="anonymous">Anonymous</label>
-                <input type="radio" id="name" name="sender" value="name">
-                <label for="name">Your name</label>
-            </fieldset>
-            <br>
-            <label for="firstName">First name:
-                <input type="text" name="firstName" id="firstName">
-            </label>
-            <br>
-            <label for="urgency">Choose your message's urgency:</label>
-            <input list="urgency-opts" id="urgency" name="urgency">
+      <h2>Form</h2>
+      <form action="mailto:jatiu@ucsd.edu" method="POST">
+        <fieldset>
+          <legend>Choose the sender:</legend>
+          <input type="radio" id="anonymous" name="sender" value="anonymous" />
+          <label for="anonymous">Anonymous</label>
+          <input type="radio" id="name" name="sender" value="name" />
+          <label for="name">Your name</label>
+        </fieldset>
+        <br />
+        <label for="firstName"
+          >First name:
+          <input type="text" name="firstName" id="firstName" />
+        </label>
+        <br />
+        <label for="urgency">Choose your message's urgency:</label>
+        <input list="urgency-opts" id="urgency" name="urgency" />
 
-            <datalist id="urgency-opts">
-                <option value="High"></option>
-                <option value="Medium"></option>
-                <option value="Low"></option>
-            </datalist>
-            <br>
-            <label for="mailSubject">Choose your email subject line:
-                <select name="mailSubject" id="mailSubject">
-                    <optgroup label="Comments">
-                        <option value="comments">Comments on Portfolio</option>
-                    </optgroup>
-                    <optgroup label="Questions">
-                        <option value="questions">Questions About Portfolio</option>
-                    </optgroup>
-                </select>
-            </label>
-            <br>
-            <label for="mailBody">Type your email body in this box:
-                <textarea name="mailBody" id="mailBody">Here!</textarea>
-            </label>
-            <br>
-            <button type="submit">Send Email</button>
-        </form>
+        <datalist id="urgency-opts">
+          <option value="High"></option>
+          <option value="Medium"></option>
+          <option value="Low"></option>
+        </datalist>
+        <br />
+        <label for="mailSubject"
+          >Choose your email subject line:
+          <select name="mailSubject" id="mailSubject">
+            <optgroup label="Comments">
+              <option value="comments">Comments on Portfolio</option>
+            </optgroup>
+            <optgroup label="Questions">
+              <option value="questions">Questions About Portfolio</option>
+            </optgroup>
+          </select>
+        </label>
+        <br />
+        <label for="mailBody"
+          >Type your email body in this box:
+          <textarea name="mailBody" id="mailBody">Here!</textarea>
+        </label>
+        <br />
+        <button type="submit">Send Email</button>
+      </form>
     </section>
 
-    <hr>
+    <hr />
 
     <section>
-        <h2>Table</h2>
-        <table>
-            <caption>Pet Names</caption>
-            <colgroup>
-                <col style="width:100px;">
-                <col style="width:200px;">
-            </colgroup>
-            
-            <tr>
-                <th>Animal</th>
-                <th>Name</th>
-            </tr>
-            <tr>
-                <td>Cat</td>
-                <td>Midnight</td>
-            </tr>
-            <tr>
-                <td>Dog</td>
-                <td>Blue</td>
-            </tr>
-        </table>
+      <h2>Table</h2>
+      <table>
+        <caption>
+          Pet Names
+        </caption>
+        <colgroup>
+          <col style="width: 100px" />
+          <col style="width: 200px" />
+        </colgroup>
+
+        <tr>
+          <th>Animal</th>
+          <th>Name</th>
+        </tr>
+        <tr>
+          <td>Cat</td>
+          <td>Midnight</td>
+        </tr>
+        <tr>
+          <td>Dog</td>
+          <td>Blue</td>
+        </tr>
+      </table>
     </section>
 
-    <hr>
+    <hr />
 
     <section>
-        <h2>Template</h2>
-        <template>
-            <p>This is hidden!</p>
-        </template>
-        <p>This is not hidden!</p>
+      <h2>Template</h2>
+      <template>
+        <p>This is hidden!</p>
+      </template>
+      <p>This is not hidden!</p>
     </section>
 
-    <hr>
+    <hr />
 
     <section>
-        <h2>Canvas</h2>
-        <canvas id="canvas" width="500" height="500" style="border:1px solid black"></canvas>
+      <h2>Canvas</h2>
+      <canvas
+        id="canvas"
+        width="500"
+        height="500"
+        style="border: 1px solid black"
+      ></canvas>
     </section>
 
-    <hr>
+    <hr />
 
     <section>
-        <h2>Media</h2>
-        <h2>Iframe</h2>
-        <p>UCSD website</p>
-        <iframe src="https://ucsd.edu/" width="500" height="500"></iframe>
-        <h2>Audio</h2>
-        <audio controls>
-            <source src="../images/funky-music.mp3" type="audio/mpeg">
-        </audio>
-        <h2>Video</h2>
-        <video controls>
-            <source src="../images/clouds.mp4" type="video/mp4">
-        </video>
-
+      <h2>Media</h2>
+      <h2>Iframe</h2>
+      <p>UCSD website</p>
+      <iframe src="https://ucsd.edu/" width="500" height="500"></iframe>
+      <h2>Audio</h2>
+      <audio controls>
+        <source src="../images/funky-music.mp3" type="audio/mpeg" />
+      </audio>
+      <h2>Video</h2>
+      <video controls>
+        <source src="../images/clouds.mp4" type="video/mp4" />
+      </video>
     </section>
 
-    <hr>
+    <hr />
 
     <footer>
-        <a href="#">&#8593; Scroll to Top</a>
-        <p>Created by Jiliana Tiu.</p>
+      <a href="#">&#8593; Scroll to Top</a>
+      <p>Created by Jiliana Tiu.</p>
     </footer>
 
     <script>
-        var c = document.getElementById("canvas");
-        var ctx = c.getContext("2d");
-        ctx.font = "20px Arial";
-        ctx.fillText("Hello World", 10, 50);
+      var c = document.getElementById("canvas");
+      var ctx = c.getContext("2d");
+      ctx.font = "20px Arial";
+      ctx.fillText("Hello World", 10, 50);
     </script>
-
-</body>
+  </body>
 </html>
-
