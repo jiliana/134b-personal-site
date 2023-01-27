@@ -13,7 +13,6 @@
     
     <main>
         <h1>Demo 1</h1>
-        <h2>Additional Tags</h2>
         <details>
             <summary>Table of Contents</summary>
             <ol>
@@ -97,9 +96,31 @@
 
     <hr>
 
+    <section>
+        <h1>Template</h1>
+        <template>
+            <p>This is hidden!</p>
+        </template>
+        <p>This is not hidden!</p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h1>Canvas</h1>
+        <canvas id="canvas" width="200" height="200" style="border:1px solid black"></canvas>
+    </section>
+
     <footer>
         <a href="#">&#8593 Scroll to Top</a>
         <p>Created by Jiliana Tiu.</p>
     </footer>
 </body>
 </html>
+
+<script>
+    var c = document.getElementById("canvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "20px Arial";
+    ctx.fillText("Hello World", 10, 50);
+</script>
